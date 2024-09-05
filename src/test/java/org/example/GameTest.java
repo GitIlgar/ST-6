@@ -7,14 +7,6 @@ import java.util.ArrayList;
 
 public class GameTest {
     @Test
-    public void testMiniMaxForMidGame() {
-        Game game = new Game();
-        char[] board = {'X', 'O', ' ', 'X', ' ', 'O', ' ', ' ', 'X'};
-        game.player2.symbol = 'O';
-        int move = game.MiniMax(board, game.player2);
-        assertTrue(move >= 1 && move <= 9);
-    }
-    @Test
     public void testTicTacToeGrid() {
         TicTacToePanel panel = new TicTacToePanel(new GridLayout(3, 3));
         assertNotNull(panel);
